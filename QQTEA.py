@@ -53,8 +53,7 @@ class QQ_TEA():
 
     def encrypt(self,v):
         END_CHAR = b'\0'
-        #FILL_N_OR = 0xF8
-        FILL_N_OR = random.randint(0,255)
+        FILL_N_OR = 0xF8
         vl = len(v)
         filln = (8-(vl+2))%8 + 2
         fills = b''
